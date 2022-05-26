@@ -1,0 +1,197 @@
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0%);
+}
+
+.rowss {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sm {
+    max-width: 980px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.containers {
+    padding-left: 45px;
+    padding-right: 45px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.foot {
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.foot p {
+    columns: #8a8a8a;
+}
+
+.foot h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.foot-col-1,
+.foot-col-2,
+.foot-col-3,
+.foot-col-4 {
+    margin-bottom: 20px;
+    min-width: 250px;
+}
+
+.foot-col-1 {
+    flex-basis: 30%;
+}
+
+.foot-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.foot-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.foot-col-4 li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+    color: blue;
+}
+
+.foot-col-4 li a {
+    color: blue;
+    font-size: 40px;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* Style the icon bar links */
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+/* Style the social media icons with color, if you want */
+
+.icon-bars {
+    position: fixed;
+    top: 90%;
+    left: 2%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* Style the icon bar links */
+
+.icon-bars a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.a img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0%;
+}
+/* Style the social media icons with color, if you want */
+
+.signup-form{
+    width:450px;
+    margin-left: 450px;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 15px;
+}
+.signup-form h3, .otp-signup-form h5, .login-form h3, .otp-login-form h5, .otp-email-form h5, .change-password-form h3{
+    background-color: #2b2e4a;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.signup-form form input, .otp-signup-form form input{
+    width: 350px;
+    height: 35px;
+}
+.signup-form form button, .otp-signup-form form button, .login-form button, .otp-login-form button, .otp-email-form button , .logout-btn, .signup-btn, .login-btn, .change-password-form form button{
+    background-color: #e84545;
+    color: white;
+    font-family: 'Zen Dots', cursive;
+
+}
+
+.otp-signup-form, .otp-login-form, .otp-email-form{
+    width: 600px;
+    margin-left: 400px;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 15px;
+
+}
+
+.login-form, .change-password-form{
+    width: 500px;
+    margin-left: 450px;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 15px;
+}
+
+.login-form form input, .change-password-form form input{
+    width: 400px;
+    height: 35px;
+}
+
+.message , h3{
+    font-family: 'Zen Dots', cursive;
+}
+span{
+    font-family: 'Zen Dots', cursive;
+    
+}
+a{
+    text-decoration:none;
+}
