@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/x-icon" href="https://s3images.coroflot.com/user_files/individual_files/401891_xbujmmyblnwntqsxtgpa73cfb.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Wecare About Us</title>
+  </head>
+  <style>
+    .hello {
+        background-color: black;
+    }
+    
+
+    
+    .rows {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        margin: 70px;
+        color: white;
+    }
+    
+    .copy p {
+        text-align: center;
+    }
+    
+    .copy li {
+        display: inline-block;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        right: 40px;
+        bottom: 50px;
+        list-style: none;
+        padding: 20px;
+        font-size: 50px;
+        width: 50px;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+    
+
+    
+    .brands {
+        margin: 100px auto;
+    }
+    
+    .col-5 {
+        width: 160px;
+    }
+    
+    .col-5 img {
+        width: 100%;
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
+    
+    .col-5 img:hover {
+        filter: grayscale(0%);
+    }
+    
+    .rowss {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .icon-bar {
+        position: fixed;
+        top: 90%;
+        left: 90%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    /* Style the icon bar links */
+    
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    /* Style the social media icons with color, if you want */
+    
+    .icon-bars {
+        position: fixed;
+        top: 90%;
+        left: 2%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    /* Style the icon bar links */
+    
+    .icon-bars a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .btn:hover {
+        transition: 0.6s;
+        background-color: black;
+    }
+    
+    .sm {
+        max-width: 980px;
+        margin: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .sms {
+        max-width: 980px;
+        margin: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+    }
+    
+    .containers {
+        padding-left: 45px;
+        padding-right: 45px;
+        max-width: 1300px;
+        margin: auto;
+    }
+    
+    .foot {
+        background-color: #000;
+        color: #8a8a8a;
+        font-size: 14px;
+        padding: 60px 0 20px;
+    }
+    
+    .foot p {
+        columns: #8a8a8a;
+    }
+    
+    .foot h3 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    
+    .foot-col-1,
+    .foot-col-2,
+    .foot-col-3,
+    .foot-col-4 {
+        margin-bottom: 20px;
+        min-width: 250px;
+    }
+    
+    .foot-col-1 {
+        flex-basis: 30%;
+    }
+    
+    .foot-col-2 {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .foot-col-2 img {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+    
+    .foot-col-4 li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px;
+        text-align: center;
+        color: blue;
+    }
+    
+    .foot-col-4 li a {
+        color: blue;
+        font-size: 40px;
+    }
+    
+    .app-logo {
+        margin-top: 20px;
+    }
+    
+    .app-logo img {
+        width: 140px;
+    }
+    
+    .rowe {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .col-2 {
+        flex-basis: 50%;
+        min-width: 360px;
+    }
+    
+    .col-2 img {
+        width: 50%;
+        padding: 50px 0;
+        position: relative;
+        left: 45%;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        margin: 30px 0;
+        background-color: #ff523b;
+        color: #fff;
+        border: 2px solid yellow;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .test {
+        padding-top: 100px;
+        color: white;
+    }
+    
+    .test .col-3 {
+        border: 0px rgb(14, 181, 236);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .test .col-3 img {
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 20px;
+        transition: transform 0.5s;
+    }
+    
+    .test .col-3:hover {
+        transform: translateY(8px);
+    }
+    
+    .fa.fa-quote-left {
+        font-size: 34px;
+        text-align: center;
+        color: #ff523b;
+    }
+    
+    .app {
+        background-color: #bff109;
+    }
+    
+    #confirmes {
+        display: none;
+        background-color: #0a0a0a;
+        color: #faefef;
+        border: 4px solid rgb(14, 80, 224);
+        position: fixed;
+        border-radius: 15px;
+        width: 500px;
+        height: 390px;
+        left: 35%;
+        top: 0%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    #confirmes .messagess {
+        text-align: left;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .submit {
+        background-color: black;
+        display: inline-block;
+        border-radius: 12px;
+        border: 4px solid rgb(237, 243, 239);
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        width: 80px;
+        cursor: pointer;
+    }
+    
+    .icon-bar {
+        position: fixed;
+        top: 90%;
+        left: 1%;
+    }
+    
+    .icon-bars {
+        position: fixed;
+        top: 90%;
+        left: 2%;
+    }
+    
+    .a img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0%;
+    }
+</style>
+        
+
+  <body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="{% static 'Wecare.png' %}" alt="" width="140">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              {% if user.is_superuser %}
+              <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Admin
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/LuckyJyoti">Database</a></li>
+                
+              </ul>
+              {%endif%}
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {% if user.is_authenticated %}
+
+            <li class="nav-item"><a href="" class="nav-link"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+              <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg></span> &nbsp; Welcome {{user.username}}</a></li>
+            <li class="nav-item"><a href="/logout" class="nav-link"> <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+              <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg></span> &nbsp; Logout</a></li>
+            {% else %}
+            <li class="nav-item"><a href="/registration/" class="nav-link"> <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg></span>  Sign up</a></li>
+            <li class="nav-item"><a href="/login/" class="nav-link"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+              <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+            </svg></span> Log in </a></li>
+            {% endif %}
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+    <div class="rowe app " style="border-radius: 10px;">
+        <div class="col-2" style="padding: 10px">
+            <h1>Give Your Online Appointment <br>New Style !</h1>
+            <p>Success isn't always about greatness. it's about consistency. Consistent <br> hard work gain succes. Greatness will come</p>
+            <a href="/"> <button class="btn">Explore Now! &#8594;</button></a>
+        </div>
+        <div class="col-2">
+            <img src="{% static 'Wecare.png' %}" alt="">
+        </div>
+    </div>
+    <div class="">
+        <h1 style="text-align:center; color:white; cursor:pointer">Our Mission</h1><br>
+        <div class="" style="color: white; margin: 50px; ">
+            <div class="">
+                <div class="">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse sapiente eaque doloribus alias magnam optio error officiis exercitationem sed veniam cumque, numquam modi asperiores dolores possimus earum voluptates obcaecati non
+                        dolorem, libero quas maxime. Vero fugiat doloribus temporibus ad nostrum excepturi pariatur velit neque aperiam nobis similique quod, beatae quia deleniti in dolorum asperiores labore quibusdam alias voluptates. Ea voluptas accusantium
+                        nulla perspiciatis tempore sint! Fuga soluta quod voluptate natus recusandae deleniti, quidem et eius ad quaerat amet corporis, veniam ea mollitia eum eveniet laudantium delectus rem? Amet a laudantium, quasi incidunt nobis at
+                        in dicta placeat sit ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum repellat consectetur quas dicta, distinctio soluta, voluptatem animi expedita ad facilis deleniti totam obcaecati error necessitatibus
+                        tenetur, doloremque dolores praesentium dolorem. Ducimus iste numquam omnis distinctio, possimus amet iure vero, veniam suscipit exercitationem quo nihil animi id asperiores. Pariatur. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam voluptas beatae recusandae et reprehenderit, nobis qui. Saepe maxime modi ipsam.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="test">
+        <h1 style="text-align:center; color:white; cursor:pointer">Our Valuable Patient</h1><br>
+        <div class="sms">
+            <div class="rowe">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptas beatae recusandae et reprehenderit, nobis qui. Saepe maxime modi ipsam.</p>
+                    <div class="rate">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-o checked"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="../static/user-1.png" alt="">
+                    <h3>Sean Khan</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptas beatae recusandae et reprehenderit, nobis qui. Saepe maxime modi ipsam.</p>
+                    <div class="rate">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-o checked"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="../static/user-2.png" alt="">
+                    <h3>Vishal Khurana</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptas beatae recusandae et reprehenderit, nobis qui. Saepe maxime modi ipsam.</p>
+                    <div class="rate">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-o checked"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="../static/user-3.png" alt="">
+                    <h3>Chanchal Pawar</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="test">
+        <h1 style="text-align:center; color:white; cursor:pointer">Our Developers</h1><br>
+        <div class="sm">
+            <div class="rowe" style="display: flex; margin:auto;">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptas beatae recusandae et reprehenderit, nobis qui. Saepe maxime modi ipsam.</p>
+                    <div class="rate">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-o checked"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="../static/jyoti.jpg" alt="">
+                    <h3>Jyoti Panchal</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptas beatae recusandae et reprehenderit, nobis qui. Saepe maxime modi ipsam.</p>
+                    <div class="rate">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star-half-o checked"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="../static/lucky.jpg" alt="">
+                    <h3>Lucky Tamrakar</h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <hr color="black ">
+  <div class="foot">
+  
+    <div class="containers">
+        <div class="rowss">
+            <div class="foot-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="{% static 'app-store.png' %}" alt="">
+                    <img src="{% static 'play-store.png' %}" alt="">
+                </div>
+            </div>
+            <div class="foot-col-2 app-logo">
+                <a href="/"><img src="https://wallpaperaccess.com/full/505753.jpg" style="background-color: black; filter: invert();" alt=""></a>
+                <br><a href="/"><img src="{% static 'Wecare.png' %}"  alt=""></a>
+  
+            </div>
+  
+            <div class="foot-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100073352633961 " target="_blank " class="fa fa-facebook "></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/quiz_exam_?utm_medium=copy_link " target="_blank " class="fa fa-instagram "></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/QuizExam " target="_blank " class="fa fa-twitter "></a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/channel/UCqzXoXGDaOHLYShkr-BORyQ " target="_blank " class="fa fa-youtube "></a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com " target="_blank " class="fa fa-google "></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="color: #fff; height:1px">
+        <h4 style="text-align: center; color:azure;">Copyright &copy; 2021 WeCare All rights are reserved</h4>
+  
+    </div>
+  </div>
+  <div class="icon-bar">
+    <a href="/contact"><button class="btn btn-danger"> Help</button></a>
+  </div>
+</body>
+</html>
